@@ -1,0 +1,82 @@
+body {
+    font-size: 42px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #777;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Content */
+.container {
+    left: 20px;
+    margin: 0 auto;
+}
+
+.indexes {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    color: #F96767;
+    font-size: 30px;
+}
+  
+h1 {
+    display: inline;
+    line-height: 1em;
+    color: #333;
+}
+
+/* Complexity div styles */
+.table {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 5px;
+}
+
+.table .content {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+/* Array div inside conatiner class */
+.array {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Each individual array element */
+.cell {
+    margin: 5px;
+    padding: 10px;
+    background-color: #eee;
+    color: #222;
+    border: 5px solid #eee;
+    border-radius: 5px;
+    position: relative;
+    transition: all .4s ease-in;
+}
+
+.cell.done {
+    background-color: #9CEC5B;
+    border-color: #9CEC5B;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.cell.visited {
+    border-color: #6184D8;
+    background-color: #6184D8;
+    color: white;
+    transition: .5s;
+}
+
+.cell.current {
+    border-color: #50C5B7;
+    background-color: #50C5B7;
+    color: white; 
+    transition: all .4s ease-out;
+}
