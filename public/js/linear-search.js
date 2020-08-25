@@ -1,11 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    renderArray()
-    startAlgorithm()
-})
-
 function renderArray()
 {
-    const myArray = randomize(10)
+    document.querySelector('.array').innerHTML = ''
+    document.querySelector('.indexes').innerHTML = ''
+
+    const len = document.querySelector('.generator > input').value
+    const myArray = randomize(len)
 
     const arrayNode = document.querySelector('.array')
     for(const number of myArray)
@@ -20,6 +19,7 @@ function renderArray()
 async function startAlgorithm()
 {
     const cells = document.querySelectorAll('.cell')
+    const value = document.querySelector('.find-element > input').value
     const indexes = new Array()
     let i = 0, len = cells.length
 
@@ -30,19 +30,19 @@ async function startAlgorithm()
             printIndexes(indexes)
             return clearInterval(interval)
         }
-        updateNode(cells, i, indexes)
+        updateNode(cells, i, indexes, value)
         i = i + 1
 
     }, 1500)
 }
 
-function updateNode(cells ,i, indexes)
+function updateNode(cells ,i, indexes, value)
 {
     const current_Cell = cells.item(i)
     current_Cell.setAttribute('class', `cell current`)
 
     window.setTimeout(function() {
-        if(Number(cells.item(i).innerHTML) == 32) 
+        if(Number(cells.item(i).innerHTML) == value)
         {
             indexes.push(i)
             current_Cell.setAttribute('class', `cell done`)
