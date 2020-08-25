@@ -83,10 +83,11 @@ input {
 /* Array div inside conatiner class */
 .array {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
     margin: 0 auto;
+    flex-wrap: wrap;
     margin-top: 1.5%;
+    margin-bottom: 2%;
+    position: relative;
     justify-content: center;
 }
 
