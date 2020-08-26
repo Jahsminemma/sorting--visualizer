@@ -16,9 +16,9 @@ document.write(`
                     <a href="https://${user.name}.github.io/${user.repo}/"> Searching & Sorting Visualizer </a> 
                 </h4> </div>
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/linear-search.html">Linear Search</a></li>
-                <li><a href="#">Binary Search</a></li>
+                <li><a href="https://${user.name}.github.io/${user.repo}/views/binary-search.html">Binary Search</a></li>
                 <li><a href="#">Bubble Sort</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">Selection Sort</a></li>
             </ul>
         
         </div>
