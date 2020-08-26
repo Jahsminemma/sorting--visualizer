@@ -52,7 +52,7 @@ async function startAlgorithm()
         updateNode(cells, i, indexes, value)
         i = i + 1
 
-    }, 1500)
+    }, interval_Time)
 }
 
 function updateNode(cells ,i, indexes, value)
@@ -70,7 +70,7 @@ function updateNode(cells ,i, indexes, value)
         {
             current_Cell.setAttribute('class', `cell visited`)
         }
-    }, 1200)
+    }, time_Out)
 }
 
 function printIndexes(indexes)
