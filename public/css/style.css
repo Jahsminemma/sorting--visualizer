@@ -140,17 +140,16 @@ footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     color: #ffffff;
+    position: relative;
     text-align: center;
     justify-content: center;
+    font-family: 'Oleo Script';
+    font-size: 45px;
 }
 
-.background > h3 {
-    font: 45px 'Oleo Script', Helvetica, sans-serif;
-}
 .background > h5 {
-    font: 35px 'Oleo Script', Helvetica, sans-serif;
+    font-size: 35px;
 }
 
 .video {
