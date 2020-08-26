@@ -3,53 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Searching and Sorting Visualizer</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/navbar.css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 
     <!-- Navbar -->
     <script src="./public/partials/header.js"></script>
 
-    <!-- Head Section -->
-    <header class="header">
-        <h1>Linear Search</h1>
-    </header>
-
-    <!-- Details Section -->
-    <div class="table">
-        <div class="content">
-            <p>
-                Linear search is used on a collections of items. 
-                A linear search sequentially checks each element of 
-                the list until it finds an element that matches the target value. 
-                If the algorithm reaches the end of the list, the search terminates unsuccessfully.
-            </p>
-        </div>
-        <div class="details">
-            <p><b> Worst-Case Time Complexity </b> : O(n)</p>
-            <p><b> Worst-Case Space Complexity </b> : O(1)</p>
-        </div>
-    </div>
-
-    <!-- controls for generation and finding -->
-    <div class="controls">
-        <div class="generator">
-            <input type="number" placeholder="Enter length of array to be generated">
-            <button class="btn" onclick="renderArray()">Generate Random Elements</button>
-        </div>
-        <div class="find-element">
-            <input type="number" placeholder="Enter element to be searched">
-            <button class="btn" onclick="startAlgorithm()">Start Algorithm</button>
-        </div>
-    </div>
-
-    <!-- Main Body Section -->
-    <div class="conatiner">
-        <div class="array"></div>
-        <div class="indexes"></div>
+    <div class="background">
+        <video class="video" autoplay loop muted>
+            <source src="./assets/stars.mp4" type="video/mp4">
+        </video>
+        <h3>
+            Imagination is more important than knowledge. <br>
+            Knowledge is limited. <br>
+            Imagination encircles the world. <br>
+        </h3>
+        <h5> - Albert Einstein</h5>
     </div>
 
     <!-- footer -->

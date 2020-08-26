@@ -63,7 +63,7 @@ function printIndexes(indexes)
     }
     else
     {
-        idx.innerHTML = `Element Found at index(s) : `
+        idx.innerHTML += ` <div> Element Found at index(s) : </div> `
         for(let i = 0 ; i < indexes.length ; i++)
         {
             if(i != indexes.length - 1) {
