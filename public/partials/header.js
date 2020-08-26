@@ -13,7 +13,7 @@ document.write(`
 
             <ul id="menu">
                 <div> <h4> 
-                    <a href="https://${user.name}.github.io/${user.repo}/index.html"> Searching & Sorting Visualizer </a> 
+                    <a href="https://${user.name}.github.io/${user.repo}/"> Searching & Sorting Visualizer </a> 
                 </h4> </div>
                 <li><a href="/views/linear-search.html">Linear Search</a></li>
                 <li><a href="#">Binary Search</a></li>
