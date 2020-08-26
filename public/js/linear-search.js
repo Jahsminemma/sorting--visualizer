@@ -1,5 +1,12 @@
+let lock = false
+let interval_Time, time_Out
+
 function renderArray()
 {
+    if(lock) {
+        return
+    }
+
     document.querySelector('.array').innerHTML = ''
     document.querySelector('.indexes').innerHTML = ''
 
@@ -18,6 +25,16 @@ function renderArray()
 
 async function startAlgorithm()
 {
+    if(lock == true) {
+        return
+    }
+    lock = true
+
+    const slider = document.querySelector('.slider')
+    interval_Time = slider.value
+    time_Out = Math.floor((4/5)*interval_Time)
+    slider.disabled = true
+
     const cells = document.querySelectorAll('.cell')
     const value = document.querySelector('.find-element > input').value
     const indexes = new Array()
@@ -27,6 +44,8 @@ async function startAlgorithm()
         // Base Case
         if(i == len) 
         {
+            lock = false
+            slider.disabled = false
             printIndexes(indexes)
             return clearInterval(interval)
         }
@@ -63,7 +82,7 @@ function printIndexes(indexes)
     }
     else
     {
-        idx.innerHTML += ` <div> Element Found at index(s) : </div> `
+        idx.innerHTML += ` <div> Element Found at index : </div> `
         for(let i = 0 ; i < indexes.length ; i++)
         {
             if(i != indexes.length - 1) {

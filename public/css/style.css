@@ -54,7 +54,7 @@ h1 {
     margin: 0 auto;
     justify-content: center;
 }
-.generator, .find-element {
+.generator, .find-element, .speed {
     text-align: center;
     flex: 100%;
 }
@@ -63,6 +63,10 @@ input, .btn {
     border: 0;
     line-height: 3;
     font-weight: bolder;
+}
+
+.speed {
+    margin-top: 1%;
 }
 
 span {
