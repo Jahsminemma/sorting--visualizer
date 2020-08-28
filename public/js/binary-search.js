@@ -11,7 +11,7 @@ function renderArray()
     document.querySelector('.indexes').innerHTML = ''
 
     const len = document.querySelector('.generator > input').value
-    let myArray = randomize(len)
+    let myArray = randomize(len) // In random-array-generator.js
     // Base Case
     if(len > 500)
     {
@@ -30,7 +30,8 @@ function renderArray()
     }
 }
 
-async function startAlgorithm()
+// Binary search algorithm starts here
+function startAlgorithm()
 {
     const cells = document.querySelectorAll('.cell')
     //Base Case
@@ -51,6 +52,12 @@ async function startAlgorithm()
     }
 
     const value = parseInt(document.querySelector('.find-element > input').value)
+    // Value to be searched
+    if(typeof(value) != Number) 
+    {
+        alert(`Value must be a number`)
+        return
+    }
 
     let si = 0, ei = cells.length - 1
 

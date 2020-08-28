@@ -11,7 +11,7 @@ function renderArray()
     document.querySelector('.indexes').innerHTML = ''
 
     const len = document.querySelector('.generator > input').value
-    const myArray = randomize(len)
+    const myArray = randomize(len) // In random-array-generator.js
     // Base Case
     if(len > 500)
     {
@@ -29,7 +29,8 @@ function renderArray()
     }
 }
 
-async function startAlgorithm()
+// Linear Search algorithm working
+function startAlgorithm()
 {
     const cells = document.querySelectorAll('.cell')
     // Base Case
@@ -50,6 +51,12 @@ async function startAlgorithm()
     }
     
     const value = document.querySelector('.find-element > input').value
+    // Value to be searched
+    if(typeof(value) != Number) 
+    {
+        alert(`Value must be a number`)
+        return
+    }
     const indexes = new Array()
     let i = 0, len = cells.length
 

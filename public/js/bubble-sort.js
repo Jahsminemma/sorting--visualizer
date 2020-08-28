@@ -9,7 +9,7 @@ function renderArray()
     document.querySelector('.array').innerHTML = ''
 
     const len = document.querySelector('.generator > input').value
-    const myArray = randomize(len)
+    const myArray = randomize(len) // In random-array-generator.js
     // Base Case
     if(len > 500)
     {
@@ -28,6 +28,7 @@ function renderArray()
     }
 }
 
+// Bubble sort algorithm working
 function startAlgorithm()
 {
     let cells = document.querySelectorAll('.cell')
