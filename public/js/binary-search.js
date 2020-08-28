@@ -41,6 +41,14 @@ function startAlgorithm()
         return
     }
 
+    const value = parseInt(document.querySelector('.find-element > input').value)
+    // Value to be searched
+    if(typeof(value) != Number) 
+    {
+        alert(`Value must be a number`)
+        return
+    }
+
     const slider = document.querySelector('.slider')
     if(lock == true) {
         return
@@ -49,14 +57,6 @@ function startAlgorithm()
         slider.disabled = lock = true
         interval_Time = slider.value
         time_Out = Math.floor((4/5)*interval_Time)
-    }
-
-    const value = parseInt(document.querySelector('.find-element > input').value)
-    // Value to be searched
-    if(typeof(value) != Number) 
-    {
-        alert(`Value must be a number`)
-        return
     }
 
     let si = 0, ei = cells.length - 1
