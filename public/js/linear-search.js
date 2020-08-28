@@ -42,7 +42,7 @@ function startAlgorithm()
 
     const value = document.querySelector('.find-element > input').value
     // Value to be searched
-    if(typeof(value) != Number) 
+    if(!Number.isInteger(Number(value)))
     {
         alert(`Value must be a number`)
         return
