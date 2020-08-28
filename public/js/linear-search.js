@@ -12,6 +12,12 @@ function renderArray()
 
     const len = document.querySelector('.generator > input').value
     const myArray = randomize(len)
+    // Base Case
+    if(len > 500)
+    {
+        alert(`Length of array must be less than 500`)
+        return
+    }
 
     const arrayNode = document.querySelector('.array')
     for(const number of myArray)
@@ -25,17 +31,24 @@ function renderArray()
 
 async function startAlgorithm()
 {
+    const cells = document.querySelectorAll('.cell')
+    // Base Case
+    if(cells.length == 0)
+    {
+        alert(`Lenght of Array can't be ${cells.length}`)
+        return
+    }
+
+    const slider = document.querySelector('.slider')
     if(lock == true) {
         return
     }
-    lock = true
-
-    const slider = document.querySelector('.slider')
-    interval_Time = slider.value
-    time_Out = Math.floor((4/5)*interval_Time)
-    slider.disabled = true
-
-    const cells = document.querySelectorAll('.cell')
+    else {
+        slider.disabled = lock = true
+        interval_Time = slider.value
+        time_Out = Math.floor((4/5)*interval_Time)
+    }
+    
     const value = document.querySelector('.find-element > input').value
     const indexes = new Array()
     let i = 0, len = cells.length

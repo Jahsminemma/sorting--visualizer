@@ -1,0 +1,126 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    color: #777;
+    font-size: 42px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    display: inline;
+    line-height: 1em;
+    color: #333;
+}
+
+/* Complexity div styles */
+.table {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 5px;
+}
+
+.table .content {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.generator, .find-element, .speed {
+    text-align: center;
+    flex: 100%;
+} 
+
+.speed {
+    margin-top: 1%;
+}
+
+input, .btn {
+    border: 0;
+    line-height: 3;
+    font-weight: bolder;
+}
+
+span {
+    font-size: 13px;
+}
+
+input {
+    width: 25%;
+    color: #222222;
+    font-size: medium;
+    text-align: center;
+    border-bottom: 2px solid #A0ECD0;
+}
+
+.btn {
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #FF4136;
+}
+/* Array div inside conatiner class */
+.array {
+    display: flex;
+    align-items: flex-start;
+    min-height: 218px;
+    height: 50vh;
+    padding: 1rem;
+    flex-direction: row;
+}
+
+/* Each individual array element */
+.cell {
+    display: flex;
+    align-items: flex-start;
+    flex: 0.5;
+    width: 0.000001%;
+    margin: 1px;
+    background-color: #eeeeee;
+    resize: horizontal;
+    position: relative;
+    transition: all .4s ease-in;
+}
+
+.cell.done {
+    background-color: #9CEC5B;
+    border-color: #9CEC5B;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.cell.visited {
+    border-color: #6184D8;
+    background-color: #6184D8;
+    color: white;
+    transition: .5s;
+}
+
+.cell.current {
+    border-color: #50C5B7;
+    background-color: #50C5B7;
+    color: white; 
+    transition: all .4s ease-out;
+}
+
+/* partials */
+footer {
+    bottom: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+}

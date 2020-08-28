@@ -17,8 +17,7 @@ document.write(`
                 </h4> </div>
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/linear-search.html">Linear Search</a></li>
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/binary-search.html">Binary Search</a></li>
-                <li><a href="#">Bubble Sort</a></li>
-                <li><a href="#">Selection Sort</a></li>
+                <li><a href="https://${user.name}.github.io/${user.repo}/views/bubble-sort.html">Bubble Sort</a></li>
             </ul>
         
         </div>
