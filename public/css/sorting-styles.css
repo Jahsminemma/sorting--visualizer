@@ -88,7 +88,7 @@ input {
     flex: 0.5;
     width: 0.000001%;
     margin: 1px;
-    background-color: #eeeeee;
+    background-color: #D6D6D6;
     resize: horizontal;
     position: relative;
     transition: all .4s ease-in;
