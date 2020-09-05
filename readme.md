@@ -4,7 +4,7 @@ This is a progressive web app built using HTML, CSS and Javascript to visualize 
 
 This app is deployed with GitHub pages and can be accessed here: [Link](https://anandman03.github.io/sorting-and-searching-visualizer/). I hope you have fun playing around with it.
 
-![Home]()
+![Home](https://github.com/anandman03/sorting-and-searching-visualizer/blob/master/assets/images/home.PNG)
 
 ## Purpose
 
@@ -14,7 +14,7 @@ I wanted to improve my skills with HTML, CSS, JavaScript and also learn classic 
 
 * `index.html` - This file contains the code for Home page.
 
-* 'views` - This folder contains the HTML files for viewing different algorithms. Each HTML file contains some introduction about algorithm, it's complexity, control panel and list elements for visualizations.
+* `views` - This folder contains the HTML files for viewing different algorithms. Each HTML file contains some introduction about algorithm, it's complexity, control panel and list elements for visualizations.
 
 The `public` folder contains three subdirectories : 
 
@@ -26,5 +26,5 @@ The `public` folder contains three subdirectories :
 
 ## Design
 
-![Home]()
-![Home]()
+![Search](https://github.com/anandman03/sorting-and-searching-visualizer/blob/master/assets/images/search.PNG)
+![Sort](https://github.com/anandman03/sorting-and-searching-visualizer/blob/master/assets/images/sort.PNG)
