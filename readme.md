@@ -1,5 +1,7 @@
 # Sorting and Searching Visualizer
 
+[![CodeFactor](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/badge/master)](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/overview/master)
+
 This is a progressive web app built using HTML, CSS and Javascript to visualize classic sorting algorithms such as insertion sort, selection sort and searching algorithms such as linear and binary search.
 
 This app is deployed with GitHub pages and can be accessed here: [Link](https://anandman03.github.io/sorting-and-searching-visualizer/). I hope you have fun playing around with it.

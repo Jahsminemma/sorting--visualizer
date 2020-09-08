@@ -27,7 +27,7 @@ nav {
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-} 
+}
 #menuToggle input {
     display: flex;
     width: 40px;
@@ -36,7 +36,7 @@ nav {
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-} 
+}
 #menuToggle span {
     display: flex;
     width: 29px;
@@ -48,10 +48,10 @@ nav {
     z-index: 1;
     transform-origin: 5px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
-} 
+}
 #menuToggle span:first-child {
     transform-origin: 0% 0%;
-} 
+}
 #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
@@ -59,14 +59,14 @@ nav {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
     background: #36383F;
-} 
+}
 #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-} 
+}
 #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
-} 
+}
 #menu{
     position: absolute;
     width: 200px;
@@ -83,7 +83,7 @@ nav {
 #menu li {
     padding: 10px 0;
     transition-delay: 2s;
-}  
+}
 #menuToggle input:checked ~ ul {
     transform: none;
 }

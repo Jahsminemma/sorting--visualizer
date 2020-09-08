@@ -41,7 +41,7 @@ h1 {
 .generator, .find-element, .speed {
     text-align: center;
     flex: 100%;
-} 
+}
 
 .speed {
     margin-top: 1%;
@@ -111,7 +111,7 @@ input {
 .cell.current {
     border-color: #50C5B7;
     background-color: #50C5B7;
-    color: white; 
+    color: white;
     transition: all .4s ease-out;
 }
 
