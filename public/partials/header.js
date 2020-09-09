@@ -3,7 +3,7 @@ const user = {
     repo: 'sorting-and-searching-visualizer'
 }
 
-document.write(`
+const header = `
     <nav role="navigation">
         <div id="menuToggle">
             <input type="checkbox"/>
@@ -23,5 +23,7 @@ document.write(`
         
         </div>
     </nav>
-    <br>`
-)
+    <br>
+`
+
+document.write(header)

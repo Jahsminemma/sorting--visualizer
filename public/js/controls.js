@@ -1,6 +1,6 @@
-document.write(`
+const controls = `
     <div class="controls">
-    
+
         <div class="generator">
             <input type="number" placeholder="Enter length of array to be generated">
             <button class="btn" onclick="renderArray()">Generate Random Elements</button>
@@ -13,4 +13,6 @@ document.write(`
         </div>
 
     </div>
-`)
+`
+
+document.write(controls)
