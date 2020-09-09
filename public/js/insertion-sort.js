@@ -53,15 +53,16 @@ function startAlgorithm()
 
     const interval = setInterval(function() {
 
-        const keyValue = cells[startIndex].getAttribute('value')
-        if(pointer < 0 || Number(cells[pointer].getAttribute('value')) > Number(keyValue))
+        if(pointer < 0 || Number(cells[pointer].getAttribute('value')) < Number(cells[pointer+1].getAttribute('value')))
         {
             startIndex += 1
             pointer = startIndex - 1
         }
+        // Base condition
         if(startIndex == len)
         {   
-            for(const cell of cells) {
+            for(const cell of cells) 
+            {
                 cell.setAttribute('class', `cell done`)
             }
             slider.disabled = lock = false
