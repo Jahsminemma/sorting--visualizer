@@ -41,7 +41,7 @@ function startAlgorithm()
         return
     }
 
-    const value = parseInt(document.querySelector('.find-element > input').value)
+    const value = document.querySelector('.find-element > input').value
     // Value to be searched
     if(value == '')
     {
