@@ -1,6 +1,6 @@
 # Sorting and Searching Visualizer
 
-[![CodeFactor](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/badge/master)](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/overview/master) [![CodeScene Code Health](https://codescene.io/projects/9235/status-badges/code-health)](https://codescene.io/projects/9235) [![CodeScene System Mastery](https://codescene.io/projects/9235/status-badges/system-mastery)](https://codescene.io/projects/9235)
+[![CodeFactor](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/badge/master)](https://www.codefactor.io/repository/github/anandman03/sorting-and-searching-visualizer/overview/master) [![CodeScene Code Health](https://codescene.io/projects/9235/status-badges/code-health)](https://codescene.io/projects/9235) [![CodeScene System Mastery](https://codescene.io/projects/9235/status-badges/system-mastery)](https://codescene.io/projects/9235) [![DeepScan grade](https://deepscan.io/api/teams/10851/projects/13754/branches/239584/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10851&pid=13754&bid=239584)
 
 This is a progressive web app built using HTML, CSS and Javascript to visualize classic sorting algorithms such as insertion sort, selection sort and searching algorithms such as linear and binary search.
 
