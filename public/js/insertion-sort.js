@@ -11,9 +11,9 @@ function renderArray()
     const len = document.querySelector('.generator > input').value
     const myArray = randomize(len)
     // Base Case
-    if(len > 500)
+    if(len > 250)
     {
-        alert(`Length of array must be less than 500`)
+        alert(`Length of array must be less than 250`)
         return
     }
 

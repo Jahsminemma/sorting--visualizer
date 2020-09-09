@@ -8,7 +8,7 @@ const controls = `
 
         <div class="speed">
             <label for="text" style="font-size: 17px;">Fast</label>
-            <input type="range" class="slider" min="10" max="2000" value="1500" step="">
+            <input type="range" class="slider" min="80" max="2000" value="1500" step="">
             <label for="text" style="font-size: 17px;">Slow</label>
         </div>
 
