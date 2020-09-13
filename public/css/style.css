@@ -157,11 +157,11 @@ footer {
     font-size: 35px;
 }
 
-.video {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    object-fit: cover;
+.body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://anandman03.github.io/sorting-and-searching-visualizer/assets/img-1.jpg);
 }
