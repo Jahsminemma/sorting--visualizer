@@ -1,4 +1,4 @@
-let lock = false
+let LOCK = false
 
 function renderArray()
 {
