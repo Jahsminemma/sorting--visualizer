@@ -115,6 +115,13 @@ input {
     transition: all .4s ease-out;
 }
 
+.cell.min {
+    background-color: #FF1493;
+    border-color: #FF1493;
+    color: white;
+    transition: all .4s ease-out;
+}
+
 /* partials */
 footer {
     bottom: 0;
