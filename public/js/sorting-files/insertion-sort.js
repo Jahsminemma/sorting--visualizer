@@ -1,9 +1,9 @@
-let lock = false
+let LOCK = false
 let interval_Time, time_Out
 
 function renderArray()
 {
-    if(lock) {
+    if(LOCK) {
         return
     }
     document.querySelector('.array').innerHTML = ''
@@ -39,11 +39,11 @@ function startAlgorithm()
     }
 
     const slider = document.querySelector('.slider')
-    if(lock) {
+    if(LOCK) {
         return
     }
     else {
-        slider.disabled = lock = true
+        slider.disabled = LOCK = true
         interval_Time = slider.value
         time_Out = Math.floor((4/5)*interval_Time)
     }
