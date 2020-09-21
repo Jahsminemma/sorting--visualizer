@@ -158,13 +158,6 @@ footer {
 }
 
 .body {
-    background-image: url("https://raw.githubusercontent.com/anandman03/sorting-and-searching-visualizer/master/assets/img-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.body {
     width: 100%;
     background-color: #000;
 }
