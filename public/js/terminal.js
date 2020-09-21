@@ -126,9 +126,9 @@ function focusChecker(event)
     }, 10);
 }
 
-welcome();
-newPrompt();
-
-document.querySelector('.cmdline').onkeypress = updateWidth;
-document.querySelector('.cmdline').onblur = focusChecker;
-window.onload = focusChecker;
+window.onload = function() {
+    welcome();
+    newPrompt();
+    focusChecker();
+    document.querySelector('.cmdline').onblur = focusChecker;
+}
