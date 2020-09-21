@@ -165,7 +165,6 @@ footer {
 .terminal {
     margin: 0;
     width: 100%;
-    font-size: 15px;
     font-weight: bolder;
     height: 100%;
 }
@@ -175,18 +174,18 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
+    font-size: 15px;
 }
 
 .prompt, .prev-prompt {
     color: #00FF00;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bolder;
     margin: 0;
     width: auto;
 }
 
 .cmdline, .prev-cmdline {
-    height: 15px;
     background-color: transparent;
     color: #fff;
     text-align: left;
@@ -194,6 +193,7 @@ footer {
     margin: 5px;
     outline: none;
     border: none;
+    font-size: 13px;
 }
 
 .welcome-msg {
@@ -205,4 +205,5 @@ footer {
 .help-msg {
     color: #fff;
     margin-bottom: 15px;
+    font-size: 15px;
 }
