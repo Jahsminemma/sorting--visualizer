@@ -44,12 +44,7 @@ function newPrompt()
 
 function updateWidth(event)
 {
-    if(newLine.value.length <= 10) {
-        newLine.style.width = newLine.value.length + '9px';
-    }
-    else {
-        newLine.style.width = newLine.value.length + '0px';
-    }
+    newLine.style.width = (newLine.value.length + 1) + "ch";
 
     let keyPressed = String(event.key).toUpperCase();
     if(keyPressed === "ENTER") 
