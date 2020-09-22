@@ -7,6 +7,8 @@ function checkRoute(query)
         "INSERTION SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/insertion-sort.html",
         "SELECTION SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/selection-sort.html",
         "MERGE SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/merge-sort.html",
+        "QUICK SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/quick-sort.html",
+        "CREATOR": "https://www.linkedin.com/in/mansimar-anand/",
     };
     
     let flag = false;
