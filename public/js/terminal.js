@@ -56,56 +56,9 @@ function updateWidth(event)
 
 function updateEvents(query)
 {
-    const routes = {
-        "LINEAR SEARCH": "https://anandman03.github.io/sorting-and-searching-visualizer/views/linear-search.html",
-        "BINARY SEARCH": "https://anandman03.github.io/sorting-and-searching-visualizer/views/binary-search.html",
-        "BUBBLE SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/bubble-sort.html",
-        "INSERTION SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/insertion-sort.html",
-        "SELECTION SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/selection-sort.html",
-        "MERGE SORT": "https://anandman03.github.io/sorting-and-searching-visualizer/views/merge-sort.html",
-    };
-    
-    let flag = false;
-    for(const key of Object.keys(routes)) {
-        if(query.reduced == key) flag = true;
-    }
-
-    if(flag) {
-        window.location = routes[String(query.reduced)];
-    }
-    else {
+    if(!checkRoute(query)) {
         guideFunctions(query.original);
     }
-}
-
-function guideFunctions(query)
-{
-    const status = document.createElement('div');
-    status.setAttribute('class', 'terminal-message');
-
-    if(query == "HELP") 
-    {
-        const message = "Hi user!!, type 'option' for terminal commands or click the button on top left of screen.";
-        status.innerHTML = message;
-    }
-    else if(query == "OPTION") 
-    {
-        const types = ["bubble sort", "insertion sort", "selection sort", "merge sort", "linear search", "binary search", "quick sort"];
-        for(const type of types) {
-            status.innerHTML += `<div> ${type} </div>`;
-            status.innerHTML += '\n'
-        }
-        const message = "Type cd [Algorithm] and [Press Enter].";
-        const example = "Like 'cd bubble sort' and [Press Enter].";
-        status.innerHTML += `<br> <div> ${message} </div> <br> <div> ${example} </div>`;
-    }
-    else 
-    {
-        const message = "No Command Found. For guidance type 'help'.";
-        status.innerHTML = message;
-    }
-    terminal.appendChild(status);
-    newPrompt();
 }
 
 function filterString(check)
