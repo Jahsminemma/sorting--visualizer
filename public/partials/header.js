@@ -21,6 +21,7 @@ const header = `
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/insertion-sort.html">Insertion Sort</a></li>
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/selection-sort.html">Selection Sort</a></li>
                 <li><a href="https://${user.name}.github.io/${user.repo}/views/merge-sort.html">Merge Sort</a></li>
+                <li><a href="https://${user.name}.github.io/${user.repo}/views/quick-sort.html">Quick Sort</a></li>
             </ul>
         
         </div>
