@@ -4,6 +4,8 @@
 
 This is a progressive web app built using Vanilla Javascript to visualize classic sorting algorithms such as bubble, insertion, selection, merge, quick and heap sort. This app is deployed with GitHub pages and can be accessed here: [Link](https://anandman03.github.io/sorting-and-searching-visualizer/). I hope you have fun playing around with it.
 
+## New Version
+The new version of this project can be found here: [Link](https://github.com/anandman03/Sorting-Visualizer).
 
 ## Purpose
 
